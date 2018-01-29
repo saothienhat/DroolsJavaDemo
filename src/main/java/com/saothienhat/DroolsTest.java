@@ -1,13 +1,17 @@
-package com.sample;
+package com.saothienhat;
 
 import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 
+import com.sample.services.AppLogger;
+
 /**
  * This is a sample class to launch a rule.
+ * @author saothienhat@gmail.com
  */
 public class DroolsTest {
+	private AppLogger LOGGER = new AppLogger("DroolsTest");
 
     public static final void main(String[] args) {
         try {
@@ -18,7 +22,7 @@ public class DroolsTest {
 
             // go !
             Message message = new Message();
-            message.setMessage("Hello World");
+            message.setMessage("Hello Drools :)");
             message.setStatus(Message.HELLO);
             kSession.insert(message);
             kSession.fireAllRules();

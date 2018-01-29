@@ -1,4 +1,4 @@
-package com.sample;
+package com.saothienhat;
 
 import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
@@ -6,6 +6,7 @@ import org.kie.api.runtime.KieSession;
 
 /**
  * This is a sample file to launch a process.
+ * saothienhat@gmail.com
  */
 public class ProcessTest {
 
