@@ -4,7 +4,7 @@ import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 
-import com.sample.services.AppLogger;
+import com.saothienhat.services.AppLogger;
 
 /**
  * This is a sample class to launch a rule.

@@ -1,4 +1,4 @@
-package com.sample.services;
+package com.saothienhat.services;
 
 public class AppLogger {
 	

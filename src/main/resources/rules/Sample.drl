@@ -1,6 +1,7 @@
-package com.sample
+package com.saothienhat
  
 import com.saothienhat.DroolsTest.Message;
+import com.saothienhat.services.DroolsLogger;
  
 rule "Hello World"
     when
@@ -9,6 +10,8 @@ rule "Hello World"
         System.out.println( myMessage );
         m.setMessage( "Goodbye cruel world" );
         m.setStatus( Message.GOODBYE );
+        DroolsLogger.logDroolsInfo(drools, "LOGGER here !");
+        
         update( m );
 end
 
